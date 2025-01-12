@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias Mao | Artist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            /* background-color: #f8f7f3; */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            padding-right: 0;
+            margin-right: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #666;
+        }
+
+        .hero {
+            padding: 1rem 0;
+            text-align: center;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+         .slider {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            height: 70vh; /* Adjust this value as needed for desired aspect ratio, assuming viewport height is the constraint*/
+        }
+
+
+        .slides {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .slide.active {
+            opacity: 1;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Ensures the image fits within the slide */
+            object-position: center; /* Centers the image both horizontally and vertically */
+        }
+
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .social-links {
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        .work-section {
+            padding: 6rem 0;
+            background-color: #f8f7f3;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .work-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .about-section {
+            padding: 6rem 0;
+            background-color: white;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: #f8f7f3;
+        }
+
+        main {
+            min-height: calc(100vh); /* viewport height minus header and footer heights */
+        }
+
+         .slider-nav {
+            display: none;
+         }
+
+        .slider-dot {
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">TOBIAS MAO</a>
+            <div class="nav-links">
+                <a href="works.html">Obra</a>
+                <a href="shows.html">Muestras</a>
+                <a href="writings.html">Textos</a>
+                <a href="about.html">Bio/CV</a>
+                <a href="contact.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container slider">
+                <div class="slides">
+                    <div class="slide active"><img src="assets/images/obranafe.jpg" alt="Image 1" style="max-width: 100%; max-height: 100%;"></div>
+                </div>
+                 <div class="slider-nav"></div>
+            </div>
+            <div class="container">
+                <p><a href="https://www.instagram.com/anafe.ba/" target="_blank">Anafe</a> – Buenos Aires, Argentina</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

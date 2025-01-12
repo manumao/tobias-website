@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Works | Tobias Mao</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f7f3;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #666;
+        }
+
+        .work-section {
+            padding: 6rem 0;
+            background-color: #f8f7f3;
+        }
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .work-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: white;
+        }
+
+        main {
+            min-height: calc(100vh - 96px - 80px); /* viewport height minus header and footer heights */
+        }
+
+        .work-item .tumblr-post {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .work-item iframe {
+            max-width: 100%;
+            border: none;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .work-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .work-item .work-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+
+        .work-item p {
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 1.1rem;
+        }
+    </style>
+    <script src="https://assets.tumblr.com/post.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">TOBIAS MAO</a>
+            <div class="nav-links">
+                <a href="works.html">Obra</a>
+                <a href="shows.html">Muestras</a>
+                <a href="writings.html">Textos</a>
+                <a href="about.html">Bio/CV</a>
+                <a href="contact.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="work-section">
+            <div class="container">
+                <h2 class="section-title">Obra</h2>
+                <div class="work-grid">
+                    <div class="work-item">
+                        <h3>2024</h3>
+                    </div>
+                    <div class="work-item">
+                        <h3>2023</h3>
+                    </div>
+                    <div class="work-item">
+                        <h3>2022</h3>
+                        <p>Works that combine multiple viewpoints into single compositions, inspired by Russian icon painting traditions.</p>
+                    </div>
+                    <div class="work-item">
+                        <h3>2021</h3>
+                    </div>
+                    <div class="work-item">
+                        <h3>2017-20</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html> 
